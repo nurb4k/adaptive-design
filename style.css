@@ -1,0 +1,327 @@
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+
+    margin: 0 auto;
+    height: 900px;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container > * {
+    border-radius: 12px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        background-color: black;
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        background-color: brown;
+        max-width: 750px;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        min-height: 2300px;
+        background-color: aqua;
+        align-items: center;
+        justify-content: center;
+        max-width: none;
+        flex-direction: column;
+
+    }
+
+    .container > * {
+
+        margin-bottom: 3%;
+        min-width: 100%;
+        overflow: hidden;
+    }
+    .profile-block__content{
+
+        background-color: sandybrown;
+    }
+    .profile-block{
+
+    }
+    .news-block{
+
+    }
+    .feed-block{
+
+    }
+}
+
+/* ------------------------------ */
+.profile-block {
+
+    width: 23%;
+    height: 55%;
+}
+
+.profile-block__content {
+    background-color: white;
+    border-radius: 12px;
+
+}
+
+.profile-block__about {
+    text-align: center;
+}
+
+.profile-block__photo {
+
+    justify-content: center;
+    display: flex;
+
+    padding: 5px;
+}
+
+.profile-block__image {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.profile-block__name-surname {
+    padding: 12px;
+}
+
+.profile-block__work {
+    border-bottom: 1px solid darkgray;
+}
+
+.profile-block__connections {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgray;
+}
+
+ul {
+
+    list-style-type: none;
+    font-size: 16px;
+
+}
+
+.profile-block__number {
+    font-weight: bold;
+    padding: 12px;
+}
+
+
+.profile-block__tools li:first-child {
+    color: darkgray;
+    padding: 5px;
+}
+
+.profile-block__tools {
+    border-bottom: 1px solid darkgray;
+}
+
+.profile-block__icon {
+    width: 8%;
+}
+
+.profile-block__items {
+
+    display: flex;
+    padding: 18px;
+    align-items: center;
+    justify-content: start;
+
+}
+
+/* ------------------------------ */
+
+.news-block {
+    width: 48%;
+    height: 100%;
+}
+
+.news-block__create-post {
+    background-color: white;
+    width: 100%;
+    border-radius: 12px;
+    height: 15%;
+}
+
+.news-block__post {
+    overflow: hidden;
+    display: flex;
+    height: 70%;
+    width: 100%;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-block__photo {
+    width: 20%;
+}
+
+.news-block__image {
+    height: 100%;
+    padding: 2%;
+    width: 75%;
+    border-radius: 50%;
+
+}
+
+
+.news-block__input-post {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.news-block__input {
+    border-radius: 15px;
+    height: 70%;
+    width: 95%;
+    border: 1px solid gray;
+    background-color: lightgrey;
+}
+
+.news-block__tools {
+
+    display: flex;
+}
+
+.news-block__tools > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-block__icons {
+    width: 25%;
+}
+
+/*-----------------------------------*/
+.news-block__posted-news {
+    background-color: white;
+    height: 100%;
+    margin: 12px 0;
+    border-radius: 12px;
+}
+
+.news-block__author {
+    padding:8px;
+    display: flex;
+
+    height: 12%;
+
+}
+
+.news-block__icon {
+    width: 10%;
+    height: 100%;
+
+}
+
+.news-block__logo {
+    width: 100%;
+
+}
+
+.news-block__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: large;
+
+}
+.news-block__name>*{
+    margin-bottom: 0;
+}
+.news-block__sum-followers{
+    color:darkgray;
+    font-size: small;
+}
+
+.new-block__post{
+
+    padding: 12px;
+    letter-spacing: 0.7px;
+}
+.block__post{
+
+    width: 100%;
+}
+/*--------------------------*/
+.feed-block {
+    background-color: white;
+    width: 23%;
+    height: 40%;
+}
+.feed-block__header{
+    width: 100%;
+    height: 10%;
+    padding: 5px;
+
+}
+.feed-block__body{
+    height: 35%;
+    overflow: hidden;
+}
+.feed-block__company{
+    display: flex;
+    height: 100%;
+
+}
+
+.feed-block__company-logo{
+    width: 20%;
+}
+.feed-block__logo{
+    width: 100%;
+}
+.feed-block__company-about{
+    padding: 5px;
+}
+.name{
+    font-size: 16px;
+
+}
+.description{
+    color:darkgray;
+    font-size: 12px;
+
+}
+.follow-btn{
+
+    width: 80%;
+    height: 30%;
+
+}
+.feed-block__follow-btn{
+    border:1px solid darkgray;
+        font-size: 22px;
+     border-radius: 30px;
+     width: 100%;
+     height: 100%;
+ }
